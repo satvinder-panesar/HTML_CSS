@@ -1,0 +1,49 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Untitled Document</title>
+<style type="text/css">
+<!--
+.centeralignandbold {
+	text-align: center;
+	font-weight: bold;
+}
+-->
+</style>
+<script>
+function validate()
+{
+
+var pass=document.getElementById("mypass").value;
+if(pass=="iq")
+document.forms["myform"].submit();
+else
+{alert("Wrong password\nRe-enter Password");document.getElementById("mypass").value="";}
+}
+</script>
+
+</head>
+
+<body>
+<form name="myform" id="myform" action="http://localhost:8080/IQ Website/demo.jsp" method="post">
+<a href="iqtest.html"><img src="banner for rules.PNG" width="100%" height="12%" alt="Banner" /></a>
+<table width="12%" height="500" border="1" style="float: left; ">
+  <tr bgcolor="#0794EE">
+    <td class="centeralignandbold"><a href="iqtest.html">HOME</a></td>
+  </tr>
+  <tr>
+    <td bgcolor="#0794EE" class="centeralignandbold"><a href="rules.html">RULES</a></td>
+  </tr>
+  
+</table>
+<table width="88%" height="500" border="1">
+  <tr>
+    <td class="centeralignandbold" bgcolor="#0794EE">Enter Your name :- <input type="text" name="username" value="" id="uname"/>
+Enter Password :- <input type="password" name="pass" value="" id="mypass"/>
+<br><br><br>
+<input type="button" value="Submit" onclick="validate();"></td>
+  </tr>
+</table></form>
+</body>
+</html>
